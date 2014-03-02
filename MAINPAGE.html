@@ -14,11 +14,11 @@
 			<div class = "navbar-inner">
 			<a class = "brand"> <b>AcEs</b> </a>
 				<form class="navbar-form pull-right">
-					<a class = "textfield"> 
-						<input type="text" onfocus="this.value=''" value="Username" class="span3">
-						<input type="text" onfocus="this.value=''" value="Password" class="span3"> 
+					<form> 
+						<input type="text" placeholder="Username" class="span3" required>
+						<input type="text" placeholder="Password" class="span3" required> 
 						<button type="submit" class="btn">Log In</button>
-					</a>
+					</form>
 				</form>
 			</div>
 		</div>
@@ -29,21 +29,39 @@
 		<div class="span6">
 			<div class="hero-unit">
 				<h1>What is AcEs?</h1><br>
-				<p> AcEs is..... </p>
+				<p> <h3>&#x2713; Academic Estimator <br>
+					&#x2713; Webification of Index Cards <br>
+					&#x2713; For professors and students</h3> <br> With AcEs, professors would be able to :</p>
+				<font color="grey">
+					<p>&#x2713; sign in</p>
+					<p>&#x2713; know the personal info (including a picture) of their students</p>
+					<p>&#x2713; know the grades of their students in the pre-requisite classes of the course</p>
+					<p>&#x2713; give a feedback on a student's performance</p>
+					<p>&#x2713; know the schedules of their students for scheduling make-up classes</p>
+				</font>
+				<p> With AcEs, students would be able to :</p>
+				<font color="grey">
+					<p>&#x2713; sign in</p>
+					<p>&#x2713; edit and update their personal info and picture</p>
+					<p>&#x2713; enter their grades in the previous terms</p>
+					<p>&#x2713; enter their class schedule for the term</p>
+				</font>
+				
+				<br><h2><b>Sign up now!</b></h2>
 			</div>
 		</div>
 
 		<div class="span6">
 			<div class="hero-unit">
-				<h1>Sign Up</h1><br>
-				<a class = "textfield"> 
-					<input type="text" onfocus="this.value=''" value="Username" class="span5"><br>
-					<input type="text" onfocus="this.value=''" value="Password" class="span5"><br>
-					<input type="text" onfocus="this.value=''" value="Confirm Password" class="span5"><br>
-					<input type="radio"> Professor 
-					<input type="radio"> Student <br><br>
+				<h1>Sign Up</h1><br><br>
+				<form> 
+					<input type="text" placeholder="Username" class="span5" required><br>
+					<input type="text" placeholder="Password" class="span5" required><br>
+					<input type="text" placeholder="Confirm Password" class="span5" required><br>
+					<input type="radio" name="usertype"> Professor 
+					<input type="radio" name="usertype"> Student <br><br>
 					<button type="submit" class="btn">Submit</button>
-				</a>
+				</form>
 			</div>
 		</div>
 
