@@ -7,7 +7,12 @@
  *
  * Designed and built with all the love in the world by @mdo and @fat.
  */
-
+ 
+ body {
+ 
+	font-size:20px;
+ }
+ 
 .clearfix {
   *zoom: 1;
 }
@@ -280,7 +285,7 @@ a:focus {
 }
 
 [class*="span"] {
-  float: left;
+  float: center;
   min-height: 1px;
   margin-left: 20px;
 }
@@ -329,6 +334,7 @@ a:focus {
 }
 
 .span3 {
+font-size: 20px;
   width: 220px;
 }
 
@@ -389,6 +395,7 @@ a:focus {
 }
 
 .row-fluid {
+font-size: 20px;
   width: 100%;
   *zoom: 1;
 }
@@ -470,6 +477,7 @@ a:focus {
 }
 
 .row-fluid .span3 {
+font-size:20px;
   width: 23.404255319148934%;
   *width: 23.351063829787233%;
 }
@@ -615,9 +623,10 @@ a:focus {
 }
 
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  *zoom: 1;
+  position: relative;
+  padding: 30px;
+  width: auto;
+  height: auto;
 }
 
 .container:before,
@@ -6152,10 +6161,7 @@ a.badge:focus {
   font-size: 18px;
   font-weight: 200;
   color: inherit;
-  background-color: #eeeeee;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
+  
 }
 
 .hero-unit h1 {
@@ -6194,17 +6200,19 @@ a.badge:focus {
   position: fixed;
 }
 
-.wrapper{
-    width:500px;
-    height:500px;
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	margin: 0 auto -4em;
 }
 
 #terms {
-    position: fixed;
+    margin-top: 10%;
+    padding-bottom: 10px;
     bottom:40px;
     width: 100%;
     left:0px;
-    height:25px;
+    height:100%;
     display: block;
     font-size: 14px;
     font-weight: bold;
@@ -6212,4 +6220,74 @@ a.badge:focus {
     color: #999999;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
+}
+
+
+
+#login-container {
+  width: auto;
+  height: auto;
+}
+
+#signup-container {
+  width: auto;
+}
+
+#signup-button {
+  padding:10px;
+  width: 100%;
+}
+
+.bg {
+    filter: blur(5px) brightness(0.5);
+    position: absolute;
+    top: 0; left: 0;
+    height: auto; 
+    width: auto;
+    opacity: 0.8;
+}
+
+.center-container {
+    margin-left: 15%;
+}
+
+
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+#primary { width:67%; }
+#secondary { width:30%; margin-left:3%;} 
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+#primary { width:100%; }
+#secondary { width:100%; margin:0; border:none; }
+@media screen and (max-width: 1000px) {  
+    #navigation  {   
+        height: auto;  
+    }  
+        #aside  {   
+       display: none;  
+    }  
+        .container  {   
+        width: 100%; 
+    }  
+    #navigation  ul a{  
+        width: 94%;  
+        display: block;  
+        height: auto;  
+    }
+
+	h1 {
+		font-size: 90%;
+	}
+	
+	h3 {
+		font-size: 80%;
+	}
+	
+	button {
+	
+		size: 80%;
+	}
 }
