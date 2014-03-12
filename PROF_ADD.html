@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Classes</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse">
+      <div class ="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">AcEs</a>
+
+        </div>
+         <p class="navbar-text navbar-right">Hi Professor! <a href="#" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span></a></p>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#">Home</a></li>
+            <li class = "active"><a href="#">Add Classes</a></li>
+            <li><a href="#">Manage Classes <span class="badge pull-right">2</span></a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-7">
+          <h2>Add Classes</h2>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="CourseCode">Course Code</label>
+              <input type="text" class="form-control" id="CourseCode" placeholder="Enter Course Code">
+            </div>
+            <div class="form-group col-md-6">
+             <label for="Section">Section</label>
+             <input type="text" class="form-control" id="Section" placeholder="S**">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="Class List">Upload Class List</label>
+            <input type="file" id="Class List">
+            <p class="help-block">Example block-level help text here.</p>
+          </div>
+
+          <div class="control-group"> 
+            <label for="day-option" class="control-label">Days</label>
+            <div class="controls row" id="day-option">
+              <div class="col-md-2">
+              <label class="checkbox inline" for="M">
+                <input type="checkbox" id="M" name="mon_available">M
+              </label>
+              </div>
+              <div class="col-md-2">
+              <label class="checkbox inline" for="T">
+                <input type="checkbox" id="T" name="mon_available">T
+              </label>
+            </div>
+            <div class="col-md-2">
+              <label class="checkbox inline" for="W">
+                <input type="checkbox" id="W" name="mon_available">W
+              </label>
+            </div>
+            <div class="col-md-2">
+              <label class="checkbox inline" for="H">
+                <input type="checkbox" id="H" name="mon_available">H
+              </label>
+            </div>
+            <div class="col-md-2">
+              <label class="checkbox inline" for="F">
+                <input type="checkbox" id="F" name="mon_available">F
+              </label>
+            </div>
+            <div class="col-md-2">
+              <label class="checkbox inline" for="S">
+                <input type="checkbox" id="S" name="mon_available">S
+              </label>  
+            </div>           
+          </div>
+
+           <label class="control-label">Time</label> 
+           <div class="row">
+            <div class="form-group">
+              <div class="col-md-6">
+              <input type="text" class="form-control" id="From" placeholder="From">
+              </div>
+              <div class="col-md-6">
+             <input type="text" class="form-control" id="To" placeholder="To">
+           </div>
+            </div>
+          </div>   
+
+           <div class="form-group">
+            <label for="Prereqs" class="control-label">Pre-requisites</label>
+            <textarea class="form-control" id = "Prereqs" rows="3" placeholder="Course Codes"></textarea>
+            <p class="help-block">Separate by break line  </p>
+          </div>
+
+          <button type="button" class="btn btn-primary">Add</button>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+  </body>
+</html>
