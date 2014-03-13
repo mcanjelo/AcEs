@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Student Main</title>
+    <title>Student Main Page</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
   </head>
@@ -18,26 +18,33 @@
       <div class ="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">AcEs</a>
-
         </div>
-         <p class="navbar-text navbar-right">Hi Student! <a href="#" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span></a></p>
+		<div class="navbar-inverse" role="navigation">
+			<ul class= "nav navbar-nav">
+				<li class = "active"><a href="STUDENT_MAIN.html">Home</a></li>
+				<li class = dropdown>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Edit Profile <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="STUDENT_EDITINFO.html">Basic Information</a></li>
+							<li><a href="STUDENT_CHNGPW.html">Change Password</a></li>
+							<li><a href="STUDENT_LEARNING.html">Learning Style</a></li>
+							<li><a href="STUDENT_GRADES.html">Grades</a></li>
+							<li><a href="#">Schedule</a></li>
+						</ul>
+				</li>
+				<li><a href="#">Self Evaluation</a></li>
+		  </ul>
+		</div>
+         <p class="navbar-text navbar-right">Hi Student! <a href="MAINPAGE2.html" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span></a></p>
       </div>
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3">
-          <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Edit Profile</a></li>
-            <li><a href="#">Self Evaluation <span class="badge pull-right">5</span></a></li>
-          </ul>
-
-        </div>
-        <div class="col-md-9">
+        <div class="col-md-10 col-md-offset-1">
           <div class="jumbotron">
             <h1>Welcome!</h1>
             <p>Through AcEs you can....</p>
-            <p><a class="btn btn-primary btn-lg" role="button">Update your information now!</a></p>
+            <p><a class="btn btn-primary btn-lg" role="button" href = "STUDENT_EDITINFO.html">Update your information now!</a></p>
           </div>
 
         </div>

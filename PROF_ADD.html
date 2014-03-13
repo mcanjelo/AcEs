@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Add Classes</title>
+    <title>Add a Class</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
   </head>
@@ -20,25 +21,22 @@
           <a class="navbar-brand" href="#">AcEs</a>
 
         </div>
-         <p class="navbar-text navbar-right">Hi Professor! <a href="#" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span></a></p>
+				<ul class= "nav navbar-nav">
+				<li><a href="PROF_MAIN.html">Home</a></li>
+            <li class="active"><a href="#">Add Classes</a></li>
+			<li><a href="PROF_MANAGE.html">Manage Classes</a></li>
+		  </ul>
+         <p class="navbar-text navbar-right">Hi Professor! <a href="MAINPAGE2.html" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span></a></p>
       </div>
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3">
-          <ul class="nav nav-pills nav-stacked">
-            <li><a href="#">Home</a></li>
-            <li class = "active"><a href="#">Add Classes</a></li>
-            <li><a href="#">Manage Classes <span class="badge pull-right">2</span></a></li>
-          </ul>
-
-        </div>
-        <div class="col-md-7">
-          <h2>Add Classes</h2>
+        <div class="col-md-6 col-md-offset-3 well" >
+          <h2>Add a class</h2>
           <div class="row">
             <div class="form-group col-md-6">
               <label for="CourseCode">Course Code</label>
-              <input type="text" class="form-control" id="CourseCode" placeholder="Enter Course Code">
+              <input type="text" class="form-control" id="CourseCode" placeholder="Enter Course Code" required>
             </div>
             <div class="form-group col-md-6">
              <label for="Section">Section</label>
@@ -49,7 +47,8 @@
           <div class="form-group">
             <label for="Class List">Upload Class List</label>
             <input type="file" id="Class List">
-            <p class="help-block">Example block-level help text here.</p>
+            <p class="help-block"><b>NOTE: Only Microsoft Excel (.xlsx) files are accepted!</b></p>
+			<hr>	
           </div>
 
           <div class="control-group"> 
@@ -57,55 +56,56 @@
             <div class="controls row" id="day-option">
               <div class="col-md-2">
               <label class="checkbox inline" for="M">
-                <input type="checkbox" id="M" name="mon_available">M
+                <input type="checkbox" id="M" name="mon_available">Monday
               </label>
               </div>
               <div class="col-md-2">
               <label class="checkbox inline" for="T">
-                <input type="checkbox" id="T" name="mon_available">T
+                <input type="checkbox" id="T" name="mon_available">Tuesday
               </label>
             </div>
             <div class="col-md-2">
               <label class="checkbox inline" for="W">
-                <input type="checkbox" id="W" name="mon_available">W
+                <input type="checkbox" id="W" name="mon_available">Wednesday
               </label>
             </div>
             <div class="col-md-2">
               <label class="checkbox inline" for="H">
-                <input type="checkbox" id="H" name="mon_available">H
+                <input type="checkbox" id="H" name="mon_available">Thursday
               </label>
             </div>
             <div class="col-md-2">
               <label class="checkbox inline" for="F">
-                <input type="checkbox" id="F" name="mon_available">F
+                <input type="checkbox" id="F" name="mon_available">Friday
               </label>
             </div>
             <div class="col-md-2">
               <label class="checkbox inline" for="S">
-                <input type="checkbox" id="S" name="mon_available">S
+                <input type="checkbox" id="S" name="mon_available">Saturday
               </label>  
             </div>           
           </div>
 
-           <label class="control-label">Time</label> 
+           <label class="control-label">Class Time</label> 
            <div class="row">
             <div class="form-group">
               <div class="col-md-6">
-              <input type="text" class="form-control" id="From" placeholder="From">
+              <input type="text" class="form-control required" id="From" placeholder="From">
               </div>
               <div class="col-md-6">
-             <input type="text" class="form-control" id="To" placeholder="To">
+             <input type="text" class="form-control required" id="To" placeholder="To">
            </div>
             </div>
           </div>   
 
            <div class="form-group">
+		   <hr>
             <label for="Prereqs" class="control-label">Pre-requisites</label>
             <textarea class="form-control" id = "Prereqs" rows="3" placeholder="Course Codes"></textarea>
             <p class="help-block">Separate by break line  </p>
           </div>
 
-          <button type="button" class="btn btn-primary">Add</button>
+          <a href = "PROF_MAIN.html"><button type="button" class="btn btn-primary">Add this class</button></a>
 
 
       </div>

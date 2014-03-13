@@ -1692,8 +1692,8 @@ output {
   display: block;
   width: 100%;
   height: 43px;
-  padding: 10px 18px;
-  font-size: 15px;
+  padding: 8px 15px;
+  font-size: 20px;
   line-height: 1.42857143;
   color: #333333;
   background-color: #ffffff;
@@ -3449,6 +3449,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  font-size: 20px;
 }
 .nav > li {
   position: relative;
@@ -3737,7 +3738,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   padding: 14.5px 15px;
-  font-size: 19px;
+  font-size: 19pt;
   line-height: 21px;
   height: 50px;
 }
@@ -3924,6 +3925,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-text {
   margin-top: 14.5px;
   margin-bottom: 14.5px;
+  font-size: 20px;
 }
 @media (min-width: 768px) {
   .navbar-text {

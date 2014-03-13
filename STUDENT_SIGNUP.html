@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Student Edit Information</title>
+    <title>Student Sign-Up</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -23,33 +23,6 @@
     if(theEvent.preventDefault) theEvent.preventDefault();
     }
   } 
-  
-   $('form').validate({
-        rules: {
-            nickname: {
-                required: true
-            },
-            lastname: {
-                required: true
-            }
-        },
-        highlight: function(element) {
-            $(element).closest('.form-group').addClass('has-error');
-        },
-        unhighlight: function(element) {
-            $(element).closest('.form-group').removeClass('has-error');
-        },
-        errorElement: 'input',
-        errorClass: 'help-block',
-        errorPlacement: function(error, element) {
-            if(element.parent('.input-group').length) {
-                error.insertAfter(element.parent());
-            } else {
-                error.insertAfter(element);
-            }
-        }
-    });
-
 </script>
   </head>
   <body>
@@ -64,30 +37,31 @@
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3 well">
-          <ul class="nav nav-pills nav-stacked">
-            <li><a href="STUDENT_MAIN.html">Home</a></li>
-            <li class="active"><a href="STUDENT_EDITINFO.html">Basic Information</a></li>
-            <li><a href="STUDENT_CHNGPW.html">Change Password</a></li>
-			<li><a href="STUDENT_LEARNING.html">Learning Style</a></li>
-            <li><a href="STUDENT_GRADES.html">Grades</a></li>
-            <li><a href="#">Schedule</a></li>
-          </ul>
-
-        </div>
-        <div class="col-md-5 col-md-offset-1 well">
+        <div class="col-md-6 col-md-offset-3 well">
           <h3>Personal Information</h3>
           <div class="form-group">
+              <label for="LastName">Last Name</label>
+              <input type="text" class="form-control" id="LastName" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+              <label for="FirstName">First Name</label>
+              <input type="text" class="form-control" id="FirstName" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <label for="Middle">Middle Name</label>
+              <input type="text" class="form-control" id="Middle" placeholder="Middle Name">
+            </div>
+          <div class="form-group">
               <label for="Nickname">Nickname</label>
-              <input type="text" class="form-control" id="Nickname" placeholder="Nickname" name="nickname">
+              <input type="text" class="form-control" id="Nickname" placeholder="Nickname">
             </div>
             <div class="form-group">
              <label for="Contact">Mobile Number</label>
              <input type="tel" class="form-control" id="Contact" placeholder="Contact Details" onkeypress='validate(event)' />
           </div>
 
-            <div class="form-group"
->             <label for="Email">Email</label>
+          <div class="form-group">             
+            <label for="Email">Email</label>
              <input type="email" class="form-control" id="Email" placeholder="Contact Details">
           </div>
 
@@ -102,11 +76,16 @@
           </div>
 
           <div class="form-group">
-             <label for="Password">Password</label>
-             <input type="password" class="form-control" id="pw" placeholder="Password ">
+             <label for="GPA">GPA</label>
+             <input type="tel" class="form-control" id="GPA" placeholder="GPA" onkeypress='validate(event)' />
           </div>
           <div class="form-group">
-          <a href = "STUDENT_MAIN.html"><button type="submit" class="btn btn-primary">Save</button></a>
+             <label for="CGPA">CGPA</label>
+             <input type="tel" class="form-control" id="CGPA" placeholder="CGPA" onkeypress='validate(event)' />
+          </div>
+
+          <div class="form-group">
+          <a href = "STUDENT_MAIN.html"><button type="button" class="btn btn-primary">Save</button></a>
         </div>
       </div>
 
