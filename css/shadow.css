@@ -22,3 +22,15 @@ img {
 #studentform {
 	display:none;
 }
+
+#login {
+	width: 100%;
+}
+
+#teacherButton {
+	float:left;
+}
+
+#studentButton {
+	float:right;
+}

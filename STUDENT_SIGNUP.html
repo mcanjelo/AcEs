@@ -41,6 +41,10 @@
       <div class="row">
         <div class="col-md-6 col-md-offset-3 well">
           <h3>Personal Information</h3>
+		  <div class="form-group">
+             <label for="ID Number">ID Number</label>
+             <input type="tel" class="form-control" id="IDNo" placeholder="ID Number" onkeypress='validate(event)' />
+          </div>
           <div class="form-group">
               <label for="LastName">Last Name</label>
               <input type="text" class="form-control" id="LastName" placeholder="Last Name">
@@ -85,7 +89,15 @@
              <label for="CGPA">CGPA</label>
              <input type="tel" class="form-control" id="CGPA" placeholder="CGPA" onkeypress='validate(event)' />
           </div>
-
+		  <hr>
+		  <div class="form-group">
+             <label for="Password">Password</label>
+             <input type="password" class="form-control" id="pw" placeholder="Password">
+          </div>
+		  <div class="form-group">
+             <label for="Password">Confirm Password</label>
+             <input type="password" class="form-control" id="confPW" placeholder="Confirm Password">
+          </div>
           <div class="form-group">
           <a href = "STUDENT_MAIN.html"><button type="button" class="btn btn-primary">Save</button></a>
         </div>

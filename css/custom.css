@@ -20,6 +20,21 @@
         padding: 5px 10px;
     }
 	
+	.nav > li > a:hover,
+	.nav > li > a:focus,
+	.nav > li > a.active
+	{
+		text-decoration: none;
+		color: #ffffff;
+	}
+
+	.nav > li > a:visited,
+	.nav > li > a:link
+	{
+		text-decoration: none;
+		color: #007044;
+	}
+	
 	.nav-pills .open .dropdown-toggle, .nav > .open.active > a:hover {
     background-color:#007044;
     border-color: #ffffff;
@@ -86,20 +101,7 @@
 		border-color: #FFFFFF;
 	}
 	
-.nav > li > a:hover,
-	.nav > li > a:focus,
-	.nav > li > a.active
-	{
-		text-decoration: none;
-		color: #ffffff;
-	}
 
-	.nav > li > a:visited,
-	.nav > li > a:link
-	{
-		text-decoration: none;
-		color: #007044;
-	}
 	
 @media screen and (max-width: 1258px) {  
     th,td
