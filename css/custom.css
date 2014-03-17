@@ -1,25 +1,3 @@
-
-    th,td
-    {
-        margin: 0;
-        text-align: center;
-        border-collapse: collapse;
-        outline: 1px solid;
-		font-size: 16px;
-    }
-
-    td
-	{
-        padding: 5px 10px;
-			width: auto;
-    }
-
-    th
-	{
-
-        padding: 5px 10px;
-    }
-	
 	.nav > li > a:hover,
 	.nav > li > a:focus,
 	.nav > li > a.active
