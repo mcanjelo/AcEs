@@ -7,7 +7,6 @@
     <title>Student Main Page</title>
 
     <!-- Bootstrap -->
-    <link rel="icon" href="img/favicon.png" type="image" sizes="16x16">
     <link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -31,9 +30,10 @@
 							<li><a href="STUDENT_CHNGPW.html">Change Password</a></li>
 							<li><a href="STUDENT_LEARNING.html">Learning Style</a></li>
 							<li><a href="STUDENT_GRADES.html">Grades</a></li>
-							<li><a href="STUDENT_SCHED.html">Schedule</a></li>
+							<li><a href="#">Schedule</a></li>
 						</ul>
 				</li>
+				<li><a href="#">Self Evaluation</a></li>
 		  </ul>
 		</div>
          <p class="navbar-text navbar-right">Hi Student! <a href="MAINPAGE2.html" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span></a></p>
@@ -42,10 +42,23 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
-          <div class="jumbotron">
-            <h1>Welcome!</h1>
-            <p>Through AcEs you can....</p>
-            <p><a class="btn btn-primary btn-lg" role="button" href = "STUDENT_EDITINFO.html">Update your information now!</a></p>
+          <div class="jumbotron center" style="text-align:center;">
+
+            <img border="0" src="user_icon.png" alt="user" width="200" height="200">
+            <h2><label>Name: </label> Wing San T. Wong<br>
+            <label>ID Number: </label> 11132477</h2><br>
+            <p><label>College & Course: </label> CCS BSCS-ST<br>
+            <label>Mobile Number: </label> 09228838869<br>
+            <label>Email Address: </label> wing_san12@yahoo.com.hk<br>
+            <label>Learning Style: </label> Visual<br>
+            <label>GPA: </label> 4.00<br>
+            <label>CGPA: </label> 4.00<br>
+			<label>Expectations and target grade: </label><br>
+            <textarea rows="3" cols="50" readonly>WEBAPPS: I expect this course to be really fun and easy. I am aiming for a 4.0 so that my CGPA won't get any low.</textarea><br>
+            <textarea rows="3" cols="50" readonly>PROFSWD: I hope I could learn new things in this course so that I could apply them when I get into a legit software company.</textarea><br>
+            <label>Self Evaluation: </label><br>
+            <textarea rows="3" cols="50" readonly>I am adaptive to any kinds of teaching style and I believe that with my determination, I could get a 4.0 in every courses that I take.</textarea><br></p>
+            
           </div>
 
         </div>
