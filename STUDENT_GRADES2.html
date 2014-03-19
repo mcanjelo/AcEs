@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Student Edit Information</title>
+    <title>Student Grades</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -13,6 +13,7 @@
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
+	<script src="js/clickable_row.js"></script>
     <script> 
    function validate(evt) {
     var theEvent = evt || window.event;
@@ -74,41 +75,51 @@
             <li><a href="STUDENT_GRADES.html">Grades</a></li>
             <li><a href="#">Schedule</a></li>
           </ul>
-
-        </div>
-        <div class="col-md-5 col-md-offset-1 well">
-          <h3>Personal Information</h3>
-          <div class="form-group">
-              <label for="Nickname">Nickname</label>
-              <input type="text" class="form-control" id="Nickname" placeholder="Nickname" name="nickname">
-            </div>
-            <div class="form-group">
-             <label for="Contact">Mobile Number</label>
-             <input type="tel" class="form-control" id="Contact" placeholder="Contact Details" onkeypress='validate(event)' />
-          </div>
-
-            <div class="form-group"
->             <label for="Email">Email</label>
-             <input type="email" class="form-control" id="Email" placeholder="Contact Details">
-          </div>
-
-            <div class="form-group">
-             <label for="Address">Address</label>
-             <input type="text" class="form-control" id="Address" placeholder="Address">
-          </div>
-
-          <div class="form-group">
-             <label for="HS">High School</label>
-             <input type="text" class="form-control" id="HS" placeholder="High School">
-          </div>
-
-          <div class="form-group">
-             <label for="Password">Password</label>
-             <input type="password" class="form-control" id="pw" placeholder="Password ">
-          </div>
-          <div class="form-group">
-          <a href = "STUDENT_MAIN.html"><button type="submit" class="btn btn-primary">Save</button></a>
-        </div>
+		</div>
+         <div class="col-md-6 col-md-offset-1 well">
+          <h2>Grades</h2><br>
+          <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Course Code</th>
+                  <th>Term</th>
+                  <th>Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class = "clickableRow" href = "PROF_MANAGE.html">
+                  <td>WEBAPPS</td>
+                  <td>3</td>
+                  <td>4.0</td>
+                </tr>
+                <tr>
+                  <td>PROFSWD</td>
+                  <td>3</td>
+                  <td>4.0</td>
+                </tr>
+              </tbody>
+          </table>
+		  <h3>Update your Grades</h3>
+		  <div id = "gradesRow">
+			<div class =  "col-md-4">
+				<div class = "form-group" name = "">
+					<label for = "Course Code">Course Code</label>
+					<input type="text" class="form-control" id="courseCode" placeholder="Course Code" name = "courseCode">
+				</div>
+			</div>
+			<div class =  "col-md-4">
+				<div class = "form-group" name = "">
+					<label for = "Term">Term</label>
+					<input type="text" class="form-control" id="term" placeholder="Term" name = "term">
+				</div>
+			</div>
+			<div class =  "col-md-3">
+				<div class = "form-group" name = "">
+					<label for = "Grade">Grade</label>
+					<input type="text" class="form-control" id="grade" placeholder="Grade" name = "grade">
+				</div>
+			</div>
+		  </div>
       </div>
 
     </div>
