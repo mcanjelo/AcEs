@@ -1,3 +1,11 @@
+.helpImage {
+	height:80%;
+	width: 80%;
+}
+
+.normalText {
+	font-size: 20px;
+}
 	
 @media screen and (max-width: 1258px) {  
     th,td
